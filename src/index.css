@@ -1,22 +1,45 @@
 @font-face {
   font-family: Bebas Neue;
-  src: url('./fonts/BebasNeue-Regular.ttf');
+  src: url('./fonts/BebasNeue-Regular.otf');
 }
 
 @font-face {
   font-family: Bebas Neue;
-  src: url('./fonts/BebasNeue-Bold.ttf');
+  src: url('./fonts/BebasNeue-Bold.otf');
   font-weight: 700;
 }
 
 @font-face {
   font-family: Bebas Neue;
-  src: url('./fonts/BebasNeue-Light.ttf');
+  src: url('./fonts/BebasNeue-Light.otf');
   font-weight: 300;
 }
 
 body {
   margin: 0;
+  background-color: #242424;
   font-family: Bebas Neue;
+  height: 100%;
 }
 
+* {
+  outline: none;
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+#modal {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  display: none;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
